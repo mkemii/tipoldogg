@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="it">
 <head>
@@ -6,15 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Teams | Tipoldo.gg</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="teams.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.2/font/bootstrap-icons.min.css">
   <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <script src="teams.js" defer></script>
 </head>
 <body>
   <header>
     <a class="logo" href="index.html">Tipoldo.gg</a>
     <nav>
       <a href="index.html">Home</a>
-      <a href="teams.html">Team(s)</a>
+      <a href="teams.html" aria-current="page">Team(s)</a>
     </nav>
   </header>
 
@@ -25,15 +26,34 @@
       <p>Team principali composti dai giocatori fondatori del server.</p>
     </section>
 
-    <section class="card">
-      <h2>Team Tipoldo [TPLD.]</h2>
-      <hr>
-      <a href="https://steamcommunity.com/id/emiidev", class="player-link", target="_blank"><p><i class="bi bi-steam"></i> emiidev — IGL</p></a>
-      <a href="https://steamcommunity.com/id/kebab__ab", class="player-link", target="_blank"><p><i class="bi bi-steam"></i> Sosne91 — Lurker</p></a>
-      <a href="https://steamcommunity.com/profiles/76561199232673861", class="player-link", target="_blank"><p><i class="bi bi-steam"></i> Dragon — Rifler</p></a>
-      <a href="https://steamcommunity.com/profiles/76561199245100838", class="player-link", target="_blank"><p><i class="bi bi-steam"></i> Pharox — Rifler</p></a>
-      <a href="https://steamcommunity.com/id/grazialbaaaaaaa", class="player-link", target="_blank"><p><i class="bi bi-steam"></i> Ric.Silipignis — Utility</p></a>
+    <section class="teams-carousel" aria-label="Squadre della community">
+      <button class="team-arrow" id="previous-team" type="button"
+        aria-label="Mostra la squadra precedente" disabled>
+        <i class="bi bi-chevron-left" aria-hidden="true"></i>
+      </button>
+
+      <div class="team-card card" id="team-card" aria-live="polite" aria-atomic="true">
+        <div class="team-card-heading">
+          <div>
+            <p class="muted" id="team-counter">TEAM 01 / 03</p>
+            <h2 id="team-name">Team Tipoldo [TPLD.]</h2>
+          </div>
+          <span class="roster-count" id="roster-count">5 MEMBRI</span>
+        </div>
+        <hr>
+        <div class="team-roster" id="team-roster">
+          <!-- I cinque membri vengono inseriti da teams.js -->
+        </div>
+      </div>
+
+      <button class="team-arrow" id="next-team" type="button"
+        aria-label="Mostra la squadra successiva">
+        <i class="bi bi-chevron-right" aria-hidden="true"></i>
+      </button>
     </section>
+
+    <div class="team-pagination" id="team-pagination"
+      aria-label="Seleziona una squadra"></div>
   </main>
 
   <footer>@emiidev · 2026</footer>

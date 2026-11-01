@@ -1,0 +1,187 @@
+/* Stili specifici della pagina teams.html: style.css resta invariato. */
+
+.teams-carousel {
+  display: grid;
+  grid-template-columns: 48px minmax(0, 1fr) 48px;
+  align-items: center;
+  gap: 18px;
+}
+
+.team-card {
+  min-width: 0;
+  min-height: 390px;
+  padding: clamp(20px, 4vw, 34px);
+  margin: 0;
+}
+
+.team-card-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 18px;
+}
+
+.team-card-heading h2 {
+  margin: 10px 0 18px;
+  overflow-wrap: anywhere;
+}
+
+.roster-count {
+  flex: 0 0 auto;
+  color: var(--accent);
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  padding: 7px 10px;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.team-roster {
+  display: grid;
+  gap: 0;
+}
+
+.team-member {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 13px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.team-member:last-child {
+  border-bottom: 0;
+}
+
+.member-icon {
+  display: grid;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  flex: 0 0 42px;
+  border-radius: 8px;
+  background: var(--panel-light);
+  color: var(--accent);
+  font-size: 19px;
+}
+
+.member-details {
+  min-width: 0;
+  flex: 1;
+}
+
+.member-name {
+  display: block;
+  color: var(--text);
+  font-weight: 800;
+  text-decoration: none;
+  overflow-wrap: anywhere;
+}
+
+a.member-name:hover {
+  color: var(--accent-hover);
+}
+
+.member-role {
+  display: block;
+  margin-top: 3px;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.team-arrow {
+  display: grid;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  color: var(--accent);
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-size: 21px;
+  cursor: pointer;
+  transition: background-color .2s, color .2s, border-color .2s;
+}
+
+.team-arrow:hover:not(:disabled),
+.team-arrow:focus-visible {
+  color: var(--bg);
+  background: var(--accent);
+  border-color: var(--accent);
+}
+
+.team-arrow:disabled {
+  opacity: .3;
+  cursor: not-allowed;
+}
+
+.team-pagination {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 9px;
+  margin-top: 25px;
+}
+
+.team-page-dot {
+  width: 10px;
+  height: 10px;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: var(--muted);
+  cursor: pointer;
+}
+
+.team-page-dot[aria-current="true"] {
+  background: var(--accent);
+  transform: scale(1.25);
+}
+
+.team-hint {
+  margin-top: 13px;
+  color: var(--muted);
+  font-size: 12px;
+  text-align: center;
+}
+
+.team-arrow:focus-visible,
+.team-page-dot:focus-visible,
+.member-name:focus-visible {
+  outline: 2px solid var(--accent-hover);
+  outline-offset: 4px;
+}
+
+@media (max-width: 600px) {
+  .teams-carousel {
+    grid-template-columns: 34px minmax(0, 1fr) 34px;
+    gap: 8px;
+  }
+
+  .team-arrow {
+    width: 34px;
+    height: 42px;
+    font-size: 17px;
+  }
+
+  .team-card {
+    padding: 18px 14px;
+    min-height: 370px;
+  }
+
+  .team-card-heading {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .team-member {
+    gap: 10px;
+  }
+
+  .member-icon {
+    width: 36px;
+    height: 36px;
+    flex-basis: 36px;
+  }
+}
