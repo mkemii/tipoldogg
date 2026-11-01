@@ -114,6 +114,25 @@ p {
   font-size: 23px;
 }
 
+.generic-button {
+  padding: 15px 32px;
+  background-color: var(--accent);
+  text-align: center;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.generic-button:hover {
+  background-color: var(--accent-hover);
+}
+
+.generic-button a {
+  color: #0b0e14;
+  text-decoration: none;
+}
+
 .muted {
   color: var(--muted);
   font-size: 11px;
