@@ -4,23 +4,23 @@
 
 const teams = [
   {
-    name: "Team Tipoldo [TPLD.]",
+    name: "Tipoldo eSports [TPLD.]",
     members: [
       { name: "emiidev", role: "IGL", profile: "https://steamcommunity.com/id/emiidev" },
-      { name: "Sosne91", role: "Lurker", profile: "https://steamcommunity.com/id/kebab__ab" },
-      { name: "Dragon", role: "Rifler", profile: "https://steamcommunity.com/profiles/76561199232673861" },
-      { name: "Pharox", role: "Rifler", profile: "https://steamcommunity.com/profiles/76561199245100838" },
-      { name: "Ric.Silipignis", role: "Utility", profile: "https://steamcommunity.com/id/grazialbaaaaaaa" }
+      { name: "Sosne91", role: "Player", profile: "https://steamcommunity.com/id/kebab__ab" },
+      { name: "Dragon", role: "Player", profile: "https://steamcommunity.com/profiles/76561199232673861" },
+      { name: "Pharox", role: "Player", profile: "https://steamcommunity.com/profiles/76561199245100838" },
+      { name: "Kyami", role: "Player", profile: "https://steamcommunity.com/profiles/76561199566162769" }
     ]
   },
   {
-    name: "Nome seconda squadra",
+    name: "Team BRG [BRG.]",
     members: [
-      { name: "Nome giocatore 1", role: "Ruolo", profile: "" },
-      { name: "Nome giocatore 2", role: "Ruolo", profile: "" },
-      { name: "Nome giocatore 3", role: "Ruolo", profile: "" },
-      { name: "Nome giocatore 4", role: "Ruolo", profile: "" },
-      { name: "Nome giocatore 5", role: "Ruolo", profile: "" }
+      { name: "Sky_Reality", role: "IGL", profile: "https://steamcommunity.com/profiles/76561199403163725/" },
+      { name: "ynfinity", role: "Player", profile: "https://steamcommunity.com/profiles/76561198620064314" },
+      { name: "Ric.Silipignis", role: "Player", profile: "https://steamcommunity.com/id/grazialbaaaaaaa" },
+      { name: "Dragonland187", role: "Player", profile: "https://steamcommunity.com/profiles/76561199842283847" },
+      { name: "Ritzeh", role: "Player", profile: "https://steamcommunity.com/id/ritzeh_" }
     ]
   },
   {
