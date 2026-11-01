@@ -24,13 +24,13 @@ const teams = [
     ]
   },
   {
-    name: "Nome terza squadra",
+    name: "DM a @.southgg/@mkemii su DS per essere aggiunto",
     members: [
-      { name: "Nome giocatore 1", role: "Ruolo", profile: "" },
-      { name: "Nome giocatore 2", role: "Ruolo", profile: "" },
-      { name: "Nome giocatore 3", role: "Ruolo", profile: "" },
-      { name: "Nome giocatore 4", role: "Ruolo", profile: "" },
-      { name: "Nome giocatore 5", role: "Ruolo", profile: "" }
+      { name: "DM a", role: "Ruolo", profile: "" },
+      { name: "@mkemii", role: "Ruolo", profile: "" },
+      { name: "@.southgg", role: "Ruolo", profile: "" },
+      { name: "per aggiungere", role: "Ruolo", profile: "" },
+      { name: "la tua squadra", role: "Ruolo", profile: "" }
     ]
   }
 ];
