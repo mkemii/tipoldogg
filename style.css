@@ -129,6 +129,16 @@ p {
   border-color: #59677e;
 }
 
+.player-link {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.player-link:hover {
+  color: var(--accent-hover);
+  text-decoration: none;
+}
+
 footer {
   text-align: center;
   padding: 32px 20px;
