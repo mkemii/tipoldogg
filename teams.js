@@ -24,13 +24,13 @@ const teams = [
     ]
   },
   {
-    name: "DM a @.southgg/@mkemii su DS per essere aggiunto",
+    name: "DM to @.southgg/@mkemii on Discord to create your team",
     members: [
-      { name: "DM a", role: "Ruolo", profile: "" },
+      { name: "DM to", role: "Ruolo", profile: "" },
       { name: "@mkemii", role: "Ruolo", profile: "" },
       { name: "@.southgg", role: "Ruolo", profile: "" },
-      { name: "per aggiungere", role: "Ruolo", profile: "" },
-      { name: "la tua squadra", role: "Ruolo", profile: "" }
+      { name: "to create", role: "Ruolo", profile: "" },
+      { name: "your team", role: "Ruolo", profile: "" }
     ]
   }
 ];
@@ -62,7 +62,7 @@ function showTeam(index) {
   teamName.textContent = team.name;
   teamCounter.textContent =
     `TEAM ${String(currentTeam + 1).padStart(2, "0")} / ${String(teams.length).padStart(2, "0")}`;
-  rosterCount.textContent = `${team.members.length} MEMBRI`;
+  rosterCount.textContent = `${team.members.length} MEMBERS`;
 
   roster.replaceChildren();
 
