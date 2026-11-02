@@ -95,6 +95,30 @@ p {
   color: var(--muted);
 }
 
+.connect-box {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 15px;
+}
+
+.copy-text {
+  padding: 4px;
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  font-family: monospace;
+  font-size: 13px;
+  color: var(--text);
+}
+
+.copied-confirm {
+  font-family: monospace;
+  font-size: 13px;
+  color: green; 
+  display: none;
+}
+
 .cards {
   display: grid;
   grid-template-columns: repeat(2, 1fr);

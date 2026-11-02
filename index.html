@@ -26,8 +26,12 @@
 
     <section class="cards">
       <article class="card">
-        <p class="muted">CONNETTITI!</p>
-        <h4 id="server-status">Manualmente: connect 79.15.126.64</h4>
+        <p class="muted">CONNECT!</p>
+        <div class="connect-box">
+          <p>Manually:</p> 
+          <span class="copy-text" id="copy-ip">connect 79.15.126.64 <button onclick="copyText()"><i class="bi bi-copy"></i></button></span>
+          <div class="copied-confirm" id="copied-confirm">Copied! <i class="bi bi-check-lg"></i></div>
+        </div>
         <button class="generic-button"><a href="steam://rungameid/4465480//+connect%2079.15.126.64"><i class="bi bi-link-45deg"></i> Connettiti al server</a></button>
       </article>
 
@@ -41,11 +45,11 @@
     <section class="card info">
       <p class="muted">INFORMAZIONI</p>
       <h2>La nostra community</h2>
-      <p>Server CS:GO pensato per giocare tra amici, dotato di plugin come skinchanger, music kits, pug configs e altro.</p>
-      <p><span class="highlight">IMPORTANTE!</span> Attualmente il server presenta una whitelist, per essere aggiunti scrivete a @.southgg/@mkemii su Discord.</p>
+      <p>Server <span class="highlight">CS:GO</span> inizialmente pensato per giocare tra amici, dotato di plugin come skinchanger, music kits, pug configs e altro.</p>
     </section>
   </main>
 
   <footer>@emiidev · 2026</footer>
+  <script src="script.js"></script>
 </body>
 </html>
