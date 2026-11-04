@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 760" role="img" aria-labelledby="title desc">
+  <title id="title">Tipoldo Esports</title>
+  <desc id="desc">Logo vettoriale minimalista con corona oro-arancio e dettagli ciano neon.</desc>
+  <defs>
+    <style>
+      .gold { fill: #FFAE00; }
+      .cyan { fill: #00E5F2; }
+      .dark { fill: #101318; }
+      .gold-line { fill: none; stroke: #FFAE00; stroke-width: 14; stroke-linejoin: miter; stroke-linecap: square; }
+      .cyan-line { fill: none; stroke: #00E5F2; stroke-width: 12; stroke-linejoin: miter; stroke-linecap: square; }
+      .word { font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; font-weight: 900; font-size: 142px; letter-spacing: 2px; }
+    </style>
+  </defs>
+
+  <!-- Outer angular crest -->
+  <path class="gold-line" d="M145 326 L95 270 L300 270 M700 270 L905 270 L855 326"/>
+  <path class="gold-line" d="M190 570 L500 730 L810 570"/>
+  <path class="cyan-line" d="M235 575 L500 708 L765 575"/>
+  <path class="cyan-line" d="M205 303 L145 280 M795 303 L855 280"/>
+
+  <!-- Crown -->
+  <path class="gold" d="M300 245 L240 115 L365 174 L500 55 L635 174 L760 115 L700 245 Z"/>
+  <path class="dark" d="M320 224 L278 148 L372 193 L500 82 L628 193 L722 148 L680 224 Z"/>
+  <path class="gold" d="M320 224 L278 148 L372 193 L500 82 L628 193 L722 148 L680 224 Z"/>
+  <path class="dark" d="M365 214 L500 100 L635 214 L615 246 L385 246 Z"/>
+  <path class="cyan" d="M500 139 L535 177 L500 215 L465 177 Z"/>
+  <path class="gold" d="M300 250 Q500 292 700 250 L690 272 Q500 310 310 272 Z"/>
+
+  <!-- Nameplate -->
+  <path class="dark" d="M95 330 L905 330 L875 535 Q500 590 125 535 Z"/>
+  <path class="gold-line" d="M95 330 L905 330 L875 535 Q500 590 125 535 Z"/>
+  <path class="cyan-line" d="M170 555 Q500 605 830 555"/>
+
+  <!-- Wordmark -->
+  <text x="500" y="475" text-anchor="middle" class="word" fill="#FFAE00" stroke="#101318" stroke-width="7" paint-order="stroke fill" textLength="720" lengthAdjust="spacingAndGlyphs">TIPOLDO</text>
+</svg>
